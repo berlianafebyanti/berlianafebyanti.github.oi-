@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.313">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Berliana Feby Yanti">
+<meta name="dcterms.date" content="2023-01-20">
+
+<title>Analisis Pengaruh Ekspor Buah-buahan Ke Negara Malaysia Terhadap Nilai Tukar Rupiah Tahun 2012-2021</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/quarto.js"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="index_files/libs/quarto-html/anchor.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="index_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Analisis Pengaruh Ekspor Buah-buahan Ke Negara Malaysia Terhadap Nilai Tukar Rupiah Tahun 2012-2021</h1>
+<p class="subtitle lead">Metode Penelitian Politeknik APP Jakarta</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Berliana Feby Yanti </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 20, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<p><img src="poltekapp.jpg" class="img-fluid"></p>
+<p>Pendahuluan</p>
+<p>Latar belakang</p>
+<p>Di indonesia, proses perdagangan indonesia berperan sangat penting. Perdagangan internasional adalah cara yang dilakukan setiap negara untuk berkerjasama dalam bidang jasa atau barang. Dari tahun ke tahun ke tahun, perdagangan internasional semakin tumbuh dan berkembang sehingga hal ini menjadi bagian terpenting dari proses globalisasi.</p>
+<p>Perdagangan internasional terbagi menjadi dua jenis yaitu ekspor dan impor, ekspor adalah kegiatan mengeluarkan barang dari daerah pabean indonesia. sedangkan impor adalah kegiatan memasukan barang dari luar daerah pabean indonesia. Lewat prosedur serta tata metode yang telah diresmikan pemerintah. Ekspor merupakan bagian terpenting dari perdagangan internasional. Salah satu zona penyumbang ekspor terbanyak Indonesia, berasal dari zona pertanian subsector perkebunan sehingga Indonesia berusaha untuk terus meningkatkan ekspornya. Menurut Badan Pusat Statistik (BPS), nilai ekspor Indonesia pada bulan Januari hingga Oktober 2022 mencapai US$ 244,14 miliar. Tercatat bahwa ekspor Indonesia terus mengalami peningkatan.</p>
+<p>Tiongkok adalah pemasok buah-buahan terbesar dengan volume 514,9 juta kg Komoditas Buah- buhan &nbsp;ini juga memiliki nilai ekspor terbesar didunia oleh karena dengan mengembangkan buah tropis seperti durian, mangga dan pisang di dalam negeri. Komoditas buah tropis wajib dibesarkan di semua daerah indonesia. sehingga Indonesia mampu menjadi ekspor buah teropis tebanyak di dunia.</p>
+<p>Ruang lingkup</p>
+<p>Penelitian ini mengambil data nilai ekspor buah-buahan dari negara Indonesia ke negara Malaysia. Data diambil dari badan pusat statistik selama sepuluh tahun terakhir ( 2012-2021). Data ini kemudian dibandingkan dengan data nilai tukar rupiah</p>
+<p>Rumusan masalah</p>
+<p>Dari pendahuluan yang sudah dikemukakan oleh penulis makan dapat di dapatkan rumusan masalah sebagai berikut :</p>
+<ol type="1">
+<li>Apakah ekspor buah-buahan ke malaysia dapat mempengaruhi nilai tukar rupiah?</li>
+</ol>
+<p>Tujuan dan manfaat penelitian</p>
+<p>Menjelaskan hasil anlisis komoditi buah-buahan untuk mengetahui bagimana pengaruh ekspor buah-buahan ke Malaysia dapat mempengaruhi nilai tukar rupiah</p>
+<p>Studi pustaka</p>
+<p>Perdagangan Internasional</p>
+<p>Keunggulan komperatif adalah teori yang dikemukakan oleh David Ricardo (1971) yang menyatakan bahwa perdagangan internasional dapat terjadi walaupun suatu negara tidak memiliki keunggulan absolut. Prinsip keunggulan komperatif yaitu bahwa setiap negara seperti halnya orang, akan dapat memperoleh hasil dari perdagangannya dengan mengekspor barang-barang atau jasa yang merupakan keunggulan komperatif terbesarnya dan mengimpor barang-barang atau jasa yang bukan (kurang) keungguan komperatifnya (International Economics Peter H. Lindert)</p>
+<p>Daya Saing</p>
+<p>Daya saing menurut Michael Porter (1990) adalah produktivitas yang didefinisikan sebagai output yang dihasilkan oleh tenaga kerja. Teori ini menyatakan bahwa suatu negara memperoleh daya saing jika perusahaan yang ada di negara tersebut kompetitif. Peningkatan produktifitas ini disebabkan oleh peningkatan jumlah input fisik modal dan tenaga kerja, peningkatan kualitas produk yang digunakan dan peningkatan teknologi. Untuk melihat tingkat daya saing suatu negara, dapat dianalisis melalui beberapa pendekatan yaitu melalui teori perdagangan internasional (Keunggulan absolut, keunggulan komparatif, teori Hecksher Ohlin).</p>
+<p>Ekspor</p>
+<p>Menurut Bea Cukai RI, ekspor adalah kegiatan mengeluarkan barang dari daerah pabean. Yang dimaksud barang ekspor adalah barang yang telah diajikan dan telah mendapatkan nomor pendaftaran.</p>
+<p>Metode penelitian</p>
+<p>Data Nilai Ekspor Buah-buahan ke Negara Malaysia dan Nilai Tukar Rupiah</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>tahun</th>
+<th>Ekspor buah(ringgit)</th>
+<th>rupiah</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2012</td>
+<td>7.821.393.090</td>
+<td>27.307.260.102. 380</td>
+</tr>
+<tr class="even">
+<td>2013</td>
+<td>1.092.625,581</td>
+<td>3.814.743.816.800</td>
+</tr>
+<tr class="odd">
+<td>2014</td>
+<td>112.235.668</td>
+<td>391.854.565.150</td>
+</tr>
+<tr class="even">
+<td>2015</td>
+<td>31.855.100</td>
+<td>724.491.831.327.703</td>
+</tr>
+<tr class="odd">
+<td>2016</td>
+<td>28.425.318</td>
+<td>99.242.878.630</td>
+</tr>
+<tr class="even">
+<td>2017</td>
+<td>178.134.357</td>
+<td>621.930.283.640</td>
+</tr>
+<tr class="odd">
+<td>2018</td>
+<td>309.360.697</td>
+<td>1.080.088.025.640</td>
+</tr>
+<tr class="even">
+<td>2019</td>
+<td>272.043.261</td>
+<td>949.799.606.270</td>
+</tr>
+<tr class="odd">
+<td>2020</td>
+<td>367.483.426</td>
+<td>1.283.015.107.950</td>
+</tr>
+<tr class="even">
+<td>2021</td>
+<td>340.790.226</td>
+<td>1.189.819.670.220</td>
+</tr>
+</tbody>
+</table>
+<p>Sumber data badan pusat statistik (FOB: USD 000)</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>dat<span class="ot">&lt;-</span><span class="fu">read_excel</span>(<span class="st">'latihan.xlsx'</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>reg1<span class="ot">&lt;-</span><span class="fu">lm</span>(y<span class="sc">~</span>x,<span class="at">data=</span>dat)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(dat<span class="sc">$</span>y, dat<span class="sc">$</span>x, <span class="at">xlab=</span><span class="st">'Nilai Ekspor'</span>, <span class="at">ylab=</span><span class="st">'Nilai Tukar'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>dat<span class="ot">&lt;-</span><span class="fu">read_excel</span>(<span class="st">'latihan.xlsx'</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>reg1<span class="ot">&lt;-</span><span class="fu">lm</span>(y<span class="sc">~</span>x,<span class="at">data=</span>dat)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>dat<span class="sc">$</span>u<span class="ot">&lt;-</span><span class="fu">resid</span>(reg1)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(dat<span class="sc">$</span>y, dat<span class="sc">$</span>x, <span class="at">xlab=</span><span class="st">'Nilai Ekspor'</span>, <span class="at">ylab=</span><span class="st">'Nilai Tukar'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Metode analisis</p>
+<p>Teknik analisis yang digunakan dalam penelitian ini adalah teknik kuantitatif dan penjabaran deskriptif. Teknik analis kuantitatif merupakan analisis yang dilakukan dengan perhitungan angka-angka yang faktor yang mempengaruhi indeks nilai tukar rupiah terhadap nilai ekspor Buah-buahan ke Malaysia. Metode yang dipilih adalah regresi univariat atau Ordinary Least Square (OLS) dengan 2 Variable independen. Penelitian ini bermaksud mencari hubungan antara nilai tukar dan nilai ekspor. Spesifikasi yang dilakukan adalah</p>
+<p><span class="math display">\[
+y_{t}=\beta_0 + \beta_1 x_t+\mu_t
+\]</span></p>
+<p>Dimana: Yt adalah nilai tukar ringgit (Malaysia) terhadap mata uang negara lain., β0 adalah koefisien konstanta; β1 adalah parameter; Xt adalah nilai ekspor dan μi adalah error term</p>
+<p>Pembahasan</p>
+<p>Pembahasan masalah</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Visual</th>
+<th>Coeficient</th>
+<th>Std. Error</th>
+<th>T.Value</th>
+<th>Prob</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Intercept</td>
+<td>8.759e+14</td>
+<td>8.376e+14</td>
+<td>1.046</td>
+<td>0.326</td>
+</tr>
+<tr class="even">
+<td>X</td>
+<td>-1.400e+05</td>
+<td>3.341e+05</td>
+<td>-0.419</td>
+<td>0.686</td>
+</tr>
+</tbody>
+</table>
+<table class="table">
+<thead>
+<tr class="header">
+<th>R-Squared</th>
+<th>0.02146</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Adjusted R-Squared</td>
+<td>-0.1009</td>
+</tr>
+<tr class="even">
+<td>F-Statistic</td>
+<td>0.1754</td>
+</tr>
+<tr class="odd">
+<td>Prob (F-statistic)</td>
+<td>0.6863</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Sumber</strong> : Hasil olahan data penulisan</p>
+<p>Pengaruh Nilai Tukar Rupiah Terhadap Nilai Ekspor Ke Negara Malaysia</p>
+<p>Ekspor Buah-buahan terhadap nilai tukar. Di tunjukan dengan dilihat dari probabilitas X (nilai ekspor) di nyatakan tidak berpengaruh</p>
+<p>Analisis masalah</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>dat<span class="ot">&lt;-</span><span class="fu">read_excel</span>(<span class="st">"latihan.xlsx"</span>)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>reg<span class="ot">&lt;-</span><span class="fu">lm</span>(y<span class="sc">~</span>x,<span class="at">data=</span>dat)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(reg1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = y ~ x, data = dat)
+
+Residuals:
+       Min         1Q     Median         3Q        Max 
+-8.719e+14 -8.469e+14 -8.292e+14 -7.451e+14  6.374e+15 
+
+Coefficients:
+              Estimate Std. Error t value Pr(&gt;|t|)
+(Intercept)  8.759e+14  8.376e+14   1.046    0.326
+x           -1.400e+05  3.341e+05  -0.419    0.686
+
+Residual standard error: 2.402e+15 on 8 degrees of freedom
+Multiple R-squared:  0.02146,   Adjusted R-squared:  -0.1009 
+F-statistic: 0.1754 on 1 and 8 DF,  p-value: 0.6863</code></pre>
+</div>
+</div>
+<p>Kesimpulan</p>
+<p>Berdasarkan data hasil analisis kuantitatif yang telah dilakukan, setelah diamati ekspor Buah-buahan ke negara Malaysia Tidak berpengaruh terhadap nilai tukar rupiah dan buah-buahan merupakan salah satu komoditas utama yang memiliki volume ekspor terbesar di Indonesia. Oleh sebab itu apabila ekspor Buah-buahan ke negara Malaysia tidak berpengaruh positif terhadap nilai tukar rupiah.</p>
+<p>Referensi</p>
+<p><em>Badan Pusat Statistik</em>. (n.d.). Retrieved January 19, 2023, from <a href="https://www.bps.go.id/statictable/2019/02/18/2020/ekspor-buah-buahan-tahunan-menurut-negara-tujuan-utama-2012-2021.html" class="uri">https://www.bps.go.id/statictable/2019/02/18/2020/ekspor-buah-buahan-tahunan-menurut-negara-tujuan-utama-2012-2021.html</a></p>
+<p><em>Official Website Direktorat Jenderal Bea dan Cukai</em>. (n.d.). Retrieved January 19, 2023, from <a href="https://www.beacukai.go.id/arsip/pab/ekspor.html" class="uri">https://www.beacukai.go.id/arsip/pab/ekspor.html</a></p>
+<p>Industry.co.id. (2022, September 26). <em>Kesenjangan Ekspor dan Impor Industri Pengolahan Buah</em>. Industry.co.id. <a href="https://www.industry.co.id/read/113192/kesenjangan-ekspor-dan-impor-industri-pengolahan-buah" class="uri">https://www.industry.co.id/read/113192/kesenjangan-ekspor-dan-impor-industri-pengolahan-buah</a></p>
+<p>Munandar, H. (1996). <em>Ekonomi internasional. Jilid 1. Edisi 5 / Dominick Salvatore; alih bahasa oleh Haris Munandar</em>. Penerbit Erlangga.</p>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

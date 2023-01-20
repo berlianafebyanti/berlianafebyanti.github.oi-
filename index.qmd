@@ -1,0 +1,139 @@
+---
+title: "Analisis Pengaruh Ekspor Buah-buahan Ke Negara Malaysia Terhadap Nilai Tukar Rupiah Tahun 2012-2021 "
+subtitle: "Metode Penelitian Politeknik APP Jakarta"
+author: "Berliana Feby Yanti"
+date: 2023-01-20 
+number-sections: true
+format:
+  html: default
+  docx: default
+editor: visual
+---
+
+![](poltekapp.jpg)
+
+Pendahuluan
+
+Latar belakang
+
+Di indonesia, proses perdagangan indonesia berperan sangat penting. Perdagangan internasional adalah cara yang dilakukan setiap negara untuk berkerjasama dalam bidang jasa atau barang. Dari tahun ke tahun ke tahun, perdagangan internasional semakin tumbuh dan berkembang sehingga hal ini menjadi bagian terpenting dari proses globalisasi.
+
+Perdagangan internasional terbagi menjadi dua jenis yaitu ekspor dan impor, ekspor adalah kegiatan mengeluarkan barang dari daerah pabean indonesia. sedangkan impor adalah kegiatan memasukan barang dari luar daerah pabean indonesia. Lewat prosedur serta tata metode yang telah diresmikan pemerintah. Ekspor merupakan bagian terpenting dari perdagangan internasional. Salah satu zona penyumbang ekspor terbanyak Indonesia, berasal dari zona pertanian subsector perkebunan sehingga Indonesia berusaha untuk terus meningkatkan ekspornya. Menurut Badan Pusat Statistik (BPS), nilai ekspor Indonesia pada bulan Januari hingga Oktober 2022 mencapai US\$ 244,14 miliar. Tercatat bahwa ekspor Indonesia terus mengalami peningkatan.
+
+Tiongkok adalah pemasok buah-buahan terbesar dengan volume 514,9 juta kg Komoditas Buah- buhan  ini juga memiliki nilai ekspor terbesar didunia oleh karena dengan mengembangkan buah tropis seperti durian, mangga dan pisang di dalam negeri. Komoditas buah tropis wajib dibesarkan di semua daerah indonesia. sehingga Indonesia mampu menjadi ekspor buah teropis tebanyak di dunia.
+
+Ruang lingkup
+
+Penelitian ini mengambil data nilai ekspor buah-buahan dari negara Indonesia ke negara Malaysia. Data diambil dari badan pusat statistik selama sepuluh tahun terakhir ( 2012-2021). Data ini kemudian dibandingkan dengan data nilai tukar rupiah
+
+Rumusan masalah
+
+Dari pendahuluan yang sudah dikemukakan oleh penulis makan dapat di dapatkan rumusan masalah sebagai berikut :
+
+1.  Apakah ekspor buah-buahan ke malaysia dapat mempengaruhi nilai tukar rupiah?
+
+Tujuan dan manfaat penelitian
+
+Menjelaskan hasil anlisis komoditi buah-buahan untuk mengetahui bagimana pengaruh ekspor buah-buahan ke Malaysia dapat mempengaruhi nilai tukar rupiah
+
+Studi pustaka
+
+Perdagangan Internasional
+
+Keunggulan komperatif adalah teori yang dikemukakan oleh David Ricardo (1971) yang menyatakan bahwa perdagangan internasional dapat terjadi walaupun suatu negara tidak memiliki keunggulan absolut. Prinsip keunggulan komperatif yaitu bahwa setiap negara seperti halnya orang, akan dapat memperoleh hasil dari perdagangannya dengan mengekspor barang-barang atau jasa yang merupakan keunggulan komperatif terbesarnya dan mengimpor barang-barang atau jasa yang bukan (kurang) keungguan komperatifnya (International Economics Peter H. Lindert)
+
+Daya Saing
+
+Daya saing menurut Michael Porter (1990) adalah produktivitas yang didefinisikan sebagai output yang dihasilkan oleh tenaga kerja. Teori ini menyatakan bahwa suatu negara memperoleh daya saing jika perusahaan yang ada di negara tersebut kompetitif. Peningkatan produktifitas ini disebabkan oleh peningkatan jumlah input fisik modal dan tenaga kerja, peningkatan kualitas produk yang digunakan dan peningkatan teknologi. Untuk melihat tingkat daya saing suatu negara, dapat dianalisis melalui beberapa pendekatan yaitu melalui teori perdagangan internasional (Keunggulan absolut, keunggulan komparatif, teori Hecksher Ohlin).
+
+Ekspor
+
+Menurut Bea Cukai RI, ekspor adalah kegiatan mengeluarkan barang dari daerah pabean. Yang dimaksud barang ekspor adalah barang yang telah diajikan dan telah mendapatkan nomor pendaftaran.
+
+Metode penelitian
+
+Data Nilai Ekspor Buah-buahan ke Negara Malaysia dan Nilai Tukar Rupiah
+
+| tahun | Ekspor buah(ringgit) | rupiah              |
+|-------|----------------------|---------------------|
+| 2012  | 7.821.393.090        | 27.307.260.102. 380 |
+| 2013  | 1.092.625,581        | 3.814.743.816.800   |
+| 2014  | 112.235.668          | 391.854.565.150     |
+| 2015  | 31.855.100           | 724.491.831.327.703 |
+| 2016  | 28.425.318           | 99.242.878.630      |
+| 2017  | 178.134.357          | 621.930.283.640     |
+| 2018  | 309.360.697          | 1.080.088.025.640   |
+| 2019  | 272.043.261          | 949.799.606.270     |
+| 2020  | 367.483.426          | 1.283.015.107.950   |
+| 2021  | 340.790.226          | 1.189.819.670.220   |
+
+Sumber data badan pusat statistik (FOB: USD 000)
+
+```{r}
+library(readxl)
+dat<-read_excel('latihan.xlsx')
+reg1<-lm(y~x,data=dat)
+plot(dat$y, dat$x, xlab='Nilai Ekspor', ylab='Nilai Tukar')
+```
+
+```{r}
+library(readxl)
+dat<-read_excel('latihan.xlsx')
+reg1<-lm(y~x,data=dat)
+dat$u<-resid(reg1)
+plot(dat$y, dat$x, xlab='Nilai Ekspor', ylab='Nilai Tukar')
+```
+
+Metode analisis
+
+Teknik analisis yang digunakan dalam penelitian ini adalah teknik kuantitatif dan penjabaran deskriptif. Teknik analis kuantitatif merupakan analisis yang dilakukan dengan perhitungan angka-angka yang faktor yang mempengaruhi indeks nilai tukar rupiah terhadap nilai ekspor Buah-buahan ke Malaysia. Metode yang dipilih adalah regresi univariat atau Ordinary Least Square (OLS) dengan 2 Variable independen. Penelitian ini bermaksud mencari hubungan antara nilai tukar dan nilai ekspor. Spesifikasi yang dilakukan adalah
+
+$$
+y_{t}=\beta_0 + \beta_1 x_t+\mu_t
+$$
+
+Dimana: Yt adalah nilai tukar ringgit (Malaysia) terhadap mata uang negara lain., β0 adalah koefisien konstanta; β1 adalah parameter; Xt adalah nilai ekspor dan μi adalah error term
+
+Pembahasan
+
+Pembahasan masalah
+
+| Visual    | Coeficient | Std. Error | T.Value | Prob  |
+|-----------|------------|------------|---------|-------|
+| Intercept | 8.759e+14  | 8.376e+14  | 1.046   | 0.326 |
+| X         | -1.400e+05 | 3.341e+05  | -0.419  | 0.686 |
+
+| R-Squared          | 0.02146 |
+|--------------------|---------|
+| Adjusted R-Squared | -0.1009 |
+| F-Statistic        | 0.1754  |
+| Prob (F-statistic) | 0.6863  |
+
+**Sumber** : Hasil olahan data penulisan
+
+Pengaruh Nilai Tukar Rupiah Terhadap Nilai Ekspor Ke Negara Malaysia
+
+Ekspor Buah-buahan terhadap nilai tukar. Di tunjukan dengan dilihat dari probabilitas X (nilai ekspor) di nyatakan tidak berpengaruh
+
+Analisis masalah
+
+```{r}
+library(readxl)
+dat<-read_excel("latihan.xlsx")
+reg<-lm(y~x,data=dat)
+summary(reg1)
+```
+
+Kesimpulan
+
+Berdasarkan data hasil analisis kuantitatif yang telah dilakukan, setelah diamati ekspor Buah-buahan ke negara Malaysia Tidak berpengaruh terhadap nilai tukar rupiah dan buah-buahan merupakan salah satu komoditas utama yang memiliki volume ekspor terbesar di Indonesia. Oleh sebab itu apabila ekspor Buah-buahan ke negara Malaysia tidak berpengaruh positif terhadap nilai tukar rupiah.
+
+Referensi
+
+*Badan Pusat Statistik*. (n.d.). Retrieved January 19, 2023, from <https://www.bps.go.id/statictable/2019/02/18/2020/ekspor-buah-buahan-tahunan-menurut-negara-tujuan-utama-2012-2021.html>
+
+*Official Website Direktorat Jenderal Bea dan Cukai*. (n.d.). Retrieved January 19, 2023, from <https://www.beacukai.go.id/arsip/pab/ekspor.html>
+
+Industry.co.id. (2022, September 26). *Kesenjangan Ekspor dan Impor Industri Pengolahan Buah*. Industry.co.id. <https://www.industry.co.id/read/113192/kesenjangan-ekspor-dan-impor-industri-pengolahan-buah>
+
+Munandar, H. (1996). *Ekonomi internasional. Jilid 1. Edisi 5 / Dominick Salvatore; alih bahasa oleh Haris Munandar*. Penerbit Erlangga.
